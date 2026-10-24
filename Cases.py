@@ -30,7 +30,7 @@ TEST_CASES = {
     12: [("read", "alice", "pub.txt"), ("write", "alice", "password.txt"), ("read", "bob", "password.txt")],
     13: [("read", "alice", "pub.txt"), ("write", "alice", "emails.txt"), ("read", "eve", "emails.txt")],
     14: [("read", "alice", "emails.txt"), ("write", "alice", "pub.txt"), ("read", "eve", "pub.txt")],
-    15: [("set_level", "alice", "S"), ("read", "alice", "username.txt")], # Alice sets her level to S (secret) then reads username.txt
+    15: [("set_level", "alice", "S"), ("read", "alice", "username.txt")],
     16: [("read", "alice", "emails.txt"), ("set_level", "alice", "U"), ("write", "alice", "pub.txt"), ("read", "eve", "pub.txt")],
     17: [("read", "alice", "username.txt"), ("set_level", "alice", "C"), ("write", "alice", "emails.txt"), ("read", "eve", "emails.txt")],
     18: [("read", "eve", "pub.txt"), ("read", "eve", "emails.txt")]
